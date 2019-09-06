@@ -1,6 +1,6 @@
 # @lichwa/react-native-infinite-flatlist
 
-InfiniteFlatList is a React Native's FlatList with additional `onLoadMore` prop for infinite scroll. Major dif
+InfiniteFlatList is a React Native's FlatList with additional `onLoadMore` prop for infinite scroll.
 
 ## Why would I use it instead of FlatList's `onEndReached`?
 
