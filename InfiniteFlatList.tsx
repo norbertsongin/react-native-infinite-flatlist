@@ -1,4 +1,4 @@
-import React, { useState, useRef, forwardRef, RefObject, Ref } from 'react';
+import React, { useState, useRef } from 'react';
 import {
   FlatList,
   FlatListProps,
@@ -10,9 +10,8 @@ export interface InfiniteFlatListProps<T> extends FlatListProps<T> {
   onLoadMore?: () => void;
 }
 
-function InfiniteFlatList<T>(
-  props: InfiniteFlatListProps<T>,
-  ref: Ref<FlatList<T>>
+export default function InfiniteFlatList<T>(
+  props: InfiniteFlatListProps<T>
 ): React.ReactElement {
   const {
     onRefresh,
@@ -76,7 +75,6 @@ function InfiniteFlatList<T>(
   return (
     <FlatList<T>
       {...props}
-      ref={ref}
       onRefresh={handleRefresh}
       onEndReached={handleEndReached}
       onScrollBeginDrag={handleScrollBeginDrag}
@@ -86,5 +84,3 @@ function InfiniteFlatList<T>(
     />
   );
 }
-
-export default forwardRef(InfiniteFlatList);
