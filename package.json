@@ -1,5 +1,5 @@
 {
-  "name": "react-native-infinite-flatlist",
+  "name": "@lichwa/react-native-infinite-flatlist",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -15,7 +15,8 @@
     "ios",
     "react-native",
     "flatlist",
-    "react-native-infinite-flatlist"
+    "react-native-infinite-flatlist",
+    "@lichwa/react-native-infinite-flatlist"
   ],
   "author": "Norbert Songin",
   "license": "ISC",

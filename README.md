@@ -1,4 +1,4 @@
-# react-native-infinite-flatlist
+# @lichwa/react-native-infinite-flatlist
 
 InfiniteFlatList is a React Native's FlatList with additional `onLoadMore` prop for infinite scroll. Major dif
 
@@ -6,22 +6,22 @@ InfiniteFlatList is a React Native's FlatList with additional `onLoadMore` prop 
 
 Because `onEndReached` doesn't respect if user is even scrolling down and in certain cases it's getting called on initial render.
 
-In comparison `react-native-infinite-flatlist` additional `onLoadMore` prop is getting called once per scroll gesture, only when user is scrolling downwards.
+In comparison `@lichwa/react-native-infinite-flatlist` additional `onLoadMore` prop is getting called once per scroll gesture, only when user is scrolling downwards.
 
 ## Installation
 
 ```sh
-npm install react-native-infinite-flatlist
+npm install @lichwa/react-native-infinite-flatlist
 ```
 
 ```sh
-yarn add react-native-infinite-flatlist
+yarn add @lichwa/react-native-infinite-flatlist
 ```
 
 ## Usage
 
 ```js
-import InfiniteFlatList from 'react-native-infinite-flatlist';
+import InfiniteFlatList from '@lichwa/react-native-infinite-flatlist';
 
 
 class Items extends React.Component {
