@@ -10,8 +10,9 @@ export interface InfiniteFlatListProps<T> extends FlatListProps<T> {
   onLoadMore?: () => void;
 }
 
-export default function InfiniteFlatList<T>(
-  props: InfiniteFlatListProps<T>
+export default React.forwardRef(function InfiniteFlatList<T>(
+  props: InfiniteFlatListProps<T>,
+  ref: unknown,
 ): React.ReactElement {
   const {
     onRefresh,
@@ -75,6 +76,7 @@ export default function InfiniteFlatList<T>(
   return (
     <FlatList<T>
       {...props}
+      ref={ref}
       onRefresh={handleRefresh}
       onEndReached={handleEndReached}
       onScrollBeginDrag={handleScrollBeginDrag}
@@ -83,4 +85,4 @@ export default function InfiniteFlatList<T>(
       onScroll={handleScroll}
     />
   );
-}
+});
